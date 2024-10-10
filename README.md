@@ -47,7 +47,7 @@ Before running this script, ensure the following:
    Run the script by passing the required arguments:
 
    ```bash
-   python3 misp_to_exabeam.py --misp-url "https://your-misp-url" --misp-api-key "your-misp-api-key" --exabeam-url "https://your-exabeam-url" --context-table-name "MISP"
+   python3 misp_to_exabeam.py --misp-url "https://your-misp-url" --misp-api-key "your-misp-api-key" --exabeam-url "https://your-exabeam-url" --context-table-name "your-context-table"
    ```
 
 ### Command-line Arguments
@@ -68,7 +68,7 @@ To automate the script and run it daily at 1 AM, you can add it to `cron`:
 2. **Add the Cron Job**:
    Add the following line to schedule the script:
    ```bash
-   0 1 * * * /usr/bin/python3 /path/to/misp_to_exabeam.py --misp-url "https://your-misp-url" --misp-api-key "your-misp-api-key" --exabeam-url "https://your-exabeam-url" --context-table-name "MISP"
+   0 1 * * * /usr/bin/python3 /path/to/misp_to_exabeam.py --misp-url "https://your-misp-url" --misp-api-key "your-misp-api-key" --exabeam-url "https://your-exabeam-url" --context-table-name "your-context-table"
    ```
 
 3. **Save and Exit**: The script will now run every day at 1 AM.
