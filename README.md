@@ -76,7 +76,7 @@ To automate the script and run it daily at 1 AM, you can add it to `cron`:
 ### Example
 Here’s an example of running the script manually:
 ```bash
-python3 misp_to_exabeam.py --misp-url "https://192.168.0.1/" --misp-api-key "abcd1234" --exabeam-url "https://EXA_API_URL" --context-table-name "MISP"
+python3 misp_to_exabeam.py --misp-url "https://your-misp-url" --misp-api-key "your-misp-api-key" --exabeam-url "https://EXA_API_URL" --context-table-name "MISP"
 ```
 
 ### Error Handling
